@@ -4,6 +4,15 @@
 
 ---
 
+<!-- Badge dinámico con el estado de Vercel y enlace directo -->
+<div align="center">
+
+[![Deploy with Vercel](https://vercel.button.svg)](https://hito-5-pizzeria-mamma-mia-phi.vercel.app/)
+
+</div>
+
+---
+
 ## 📸 Previsualización de Vistas
 
 ### 🍕 Home (`/`)
