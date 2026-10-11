@@ -1,4 +1,5 @@
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom"; // 1. Importamos Link
 
 const CardPizza = ({ id, name, price, ingredients, img, desc }) => {
     const imagenFinal = img.includes("firebasestorage") ? `img/${id}.jpeg` : img;
@@ -46,7 +47,10 @@ const CardPizza = ({ id, name, price, ingredients, img, desc }) => {
                         <h5 className="fw-bold">Precio: ${price}</h5>
                     </div>
                     <div className="d-flex justify-content-between">
-                        <Button variant="outline-dark" size="sm">Ver Más 👁️</Button>
+                        {/* 2. Transformamos el botón Ver Más en un Link a la ruta requerida */}
+                        <Link to="/pizza/p001" className="btn btn-outline-dark btn-sm">
+                            Ver Más 👁️
+                        </Link>
                         <Button variant="dark" size="sm">Añadir 🛒</Button>
                     </div>
                 </div>
