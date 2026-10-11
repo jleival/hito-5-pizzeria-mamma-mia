@@ -4,6 +4,31 @@
 
 ---
 
+## 📸 Previsualización de Vistas
+
+### 🍕 Home (`/`)
+![Home](./src/assets/img-react-route-i/home.jpg)
+
+### 🛒 Carrito de Compras (`/cart`)
+![Cart](./src/assets/img-react-route-i/cart.jpg)
+
+### 🔐 Iniciar Sesión (`/login`)
+![Login](./src/assets/img-react-route-i/login.png)
+
+### 📝 Registro (`/register`)
+![Register](./src/assets/img-react-route-i/register.png)
+
+### 🔓 Perfil de Usuario (`/profile`)
+![Profile](./src/assets/img-react-route-i/profile.png)
+
+### ❌ Página No Encontrada (`/404`)
+![Not Found](./src/assets/img-react-route-i/not-found.png)
+
+### 📱 Vista en Dispositivos Móviles (Responsive)
+![Movil](./src/assets/img-react-route-i/movil.png)
+
+---
+
 ## 🚀 Características y Requerimientos Implementados
 
 1. **Configuración de React Router:** Instalación y configuración de `react-router-dom` envolviendo la aplicación raíz con `<BrowserRouter>` para gestionar la navegación web sin recargar la página.
