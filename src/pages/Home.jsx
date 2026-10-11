@@ -5,10 +5,10 @@ import CardPizza from '../components/CardPizza';
 // import { pizzas } from '../data/pizzas'; // Importamos el arreglo de pizzas desde la carpeta data
 
 const Home = () => {
-    // 1. Estado para añlmacenar las pizzas que vienen en la API
+    // 1. Estado para almacenar las pizzas que vienen en la API
     const [pizzas, setPizzas] = useState([]);
 
-    // 2. Funcíon para hacer el fetch al backend
+    // 2. Función para hacer el fetch al backend
     const consultarApi = async () => {
         try {
             const url = `${import.meta.env.VITE_API_URL}/api/pizzas`;
@@ -20,7 +20,7 @@ const Home = () => {
         }
     };
 
-    // 3. UseEffect para ejecutar las consulta al cargar el componente
+    // 3. UseEffect para ejecutar la consulta al cargar el componente
     useEffect(() => {
         consultarApi();
     }, []);
@@ -48,4 +48,4 @@ const Home = () => {
     );
 };
 
-export default Home
+export default Home;
