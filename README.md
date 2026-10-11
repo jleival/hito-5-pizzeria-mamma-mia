@@ -4,11 +4,10 @@
 
 ---
 
-<!-- Badge dinámico con el estado de Vercel y enlace directo -->
 <div align="center">
-
-[![Vercel Live Preview](https://img.shields.io/badge/🚀_Ver_Proyecto_Online-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://hito-5-pizzeria-mamma-mia-phi.vercel.app/)
-
+  <a href="https://hito-5-pizzeria-mamma-mia-phi.vercel.app/" target="_blank">
+    <strong>🚀 Haz clic aquí para ver el proyecto en Vercel</strong>
+  </a>
 </div>
 
 ---
