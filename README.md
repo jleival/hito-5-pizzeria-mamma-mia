@@ -23,6 +23,9 @@
 ### 🔐 Iniciar Sesión (`/login`)
 ![Login](./src/assets/img-react-route-i/login.png)
 
+### 🍕 Detalle de Pizza (`/pizza/p001`) (OJO: Apretar en Ver Mas 👁️ en el card de Pizza Napolitana para visualizarlo)
+![Pizza Detail](./src/assets/img-react-route-i/pizza-p001.jpg)
+
 ### 📝 Registro (`/register`)
 ![Register](./src/assets/img-react-route-i/register.png)
 
