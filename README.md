@@ -7,7 +7,7 @@
 <!-- Badge dinámico con el estado de Vercel y enlace directo -->
 <div align="center">
 
-[![Deploy with Vercel](https://vercel.button.svg)](https://hito-5-pizzeria-mamma-mia-phi.vercel.app/)
+[![Vercel Live Preview](https://img.shields.io/badge/🚀_Ver_Proyecto_Online-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://hito-5-pizzeria-mamma-mia-phi.vercel.app/)
 
 </div>
 
