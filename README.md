@@ -12,6 +12,12 @@
 
 ---
 
+### 🎥 Demostración en Video del Proyecto (Hito 5)
+
+<video src="./src/assets/img-react-route-i/demo-hito-5.mp4" controls width="100%"></video>
+
+---
+
 ## 📸 Previsualización de Vistas
 
 ### 🍕 Home (`/`)
