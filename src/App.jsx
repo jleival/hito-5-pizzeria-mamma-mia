@@ -1,22 +1,26 @@
 import Navbar from './components/Navbar'; // Hito 1
 import Home from './components/Home'; // Hito 1
-// import Register from './components/Register'; // Hito 2
-// import Login from './components/Login'; // Hito 2
-// import Cart from './components/Cart'; // Hito 3
-// import Pizza from './components/Pizza'; // Hito 4
 import Footer from './components/Footer'; // Hito 1
+import Register from './pages/Register'; // Hito 2
+import Login from './pages/Login'; // Hito 2
+import Cart from './pages/Cart'; // Hito 3
+import Pizza from './pages/Pizza'; // Hito 4
+import Profile from './pages/Profile'; // Hito 5
+import NotFound from './pages/NotFound'; // Hito 5
 
 function App() {
   return (
     <div className='min-vh-100 d-flex flex-column'>
       <Navbar />
       <div className='flex-grow-1'>
-        {/* Tips del Hito 2: Comenta o descomenta según la vista que quieras mostrar */}
-        <Home />
-        {/* <Pizza />  Hito 4 */}
-        {/* <Cart />  Hito 3 */}
-        {/* <Register /> */}    
-        {/* <Login /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/pizza/p001" element={<Pizza />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </div>
       <Footer />
     </div>

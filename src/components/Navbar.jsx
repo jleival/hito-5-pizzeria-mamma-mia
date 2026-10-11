@@ -1,57 +1,45 @@
-import { Navbar as NavbarBS, Nav, Container, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    // Variables requeridas por el desafío
-    const total = 25000;
-    const token = true; // Puedes cambiarlo a true para probar los otros botones
+  // Puedes usar un token simulado por ahora para cambiar la vista si lo deseas, o dejar los botones estáticos según el hito
+  const token = false; 
 
-    return (
-        <NavbarBS bg="dark" variant="dark" expand="lg" className="px-3">
-            <Container fluid>
-                {/* Nombre de la Pizzería */}
-                <NavbarBS.Brand href="#home">Pizzería Mamma Mía!</NavbarBS.Brand>
-
-                <NavbarBS.Toggle aria-controls="basic-navbar-nav" />
-                
-                <NavbarBS.Collapse id="basic-navbar-nav">
-                    {/* Opciones de navegación a la izquierda */}
-                    <Nav className="me-auto">
-                        <Button variant="outline-light" size="sm" className="me-2 mb-1 mb-lg-0">
-                            🍕 Home
-                        </Button>
-
-                        {/* Operador ternario para el Token */}
-                        {token ? (
-                            <>
-                                <Button variant="outline-light" size="sm" className="me-2 mb-1 mb-lg-0">
-                                    🔓 Profile
-                                </Button>
-                                <Button variant="outline-light" size="sm" className="me-2 mb-1 mb-lg-0">
-                                    🔒 Logout
-                                </Button>
-                            </>
-                        ) : (
-                            <>
-                                <Button variant="outline-light" size="sm" className="me-2 mb-1 mb-lg-0">
-                                    🔐 Login
-                                </Button>
-                                <Button variant="outline-light" size="sm" className="me-2 mb-1 mb-lg-0">
-                                    🔐 Register
-                                </Button>
-                            </>
-                        )}
-                    </Nav>
-
-                    {/* Botón de Total a la derecha formateado con toLocaleString() */}
-                    <Nav>
-                        <Button variant="outline-info" size="sm">
-                            🛒 Total: ${total.toLocaleString()}
-                        </Button>
-                    </Nav>
-                </NavbarBS.Collapse>
-            </Container>
-        </NavbarBS>
-    );
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+      <Link className="navbar-brand" to="/">Pizzería Mamma Mía!</Link>
+      <div className="collapse navbar-collapse">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <Link className="btn btn-outline-light btn-sm ms-2" to="/">🍕 Home</Link>
+          </li>
+          {token ? (
+            <>
+              <li className="nav-item">
+                <Link className="btn btn-outline-light btn-sm ms-2" to="/profile">🔓 Profile</Link>
+              </li>
+              <li className="nav-item">
+                <button className="btn btn-outline-light btn-sm ms-2">🔒 Logout</button>
+              </li>
+            </>
+          ) : (
+            <>
+              <li className="nav-item">
+                <Link className="btn btn-outline-light btn-sm ms-2" to="/login">🔐 Login</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="btn btn-outline-light btn-sm ms-2" to="/register">🔐 Register</Link>
+              </li>
+            </>
+          )}
+        </ul>
+        <div className="d-flex">
+          <Link className="btn btn-outline-primary" to="/cart">
+            🛒 Total: $25.000
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
