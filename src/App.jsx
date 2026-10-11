@@ -1,20 +1,20 @@
-import Navbar from './components/Navbar'; // Hito 1
-import Home from './components/Home'; // Hito 1
-import Footer from './components/Footer'; // Hito 1
-import Register from './pages/Register'; // Hito 2
-import Login from './pages/Login'; // Hito 2
-import Cart from './pages/Cart'; // Hito 3
-import Pizza from './pages/Pizza'; // Hito 4
-import Profile from './pages/Profile'; // Hito 5
-import NotFound from './pages/NotFound'; // Hito 5
-import { Routes, Route } from 'react-router-dom'; // 1. Asegúrate de importar Routes aquí
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Cart from './pages/Cart';
+import Pizza from './pages/Pizza';
+import Profile from './pages/Profile';
+import NotFound from './pages/NotFound';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className='min-vh-100 d-flex flex-column'>
       <Navbar />
       <div className='flex-grow-1'>
-        <Routes> {/* 2. ¡Las rutas DEBEN ir envueltas dentro de Routes obligatoriamente! */}
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pizza/p001" element={<Pizza />} />
           <Route path="/cart" element={<Cart />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
-        </Routes> {/* 3. Cierre de Routes */}
+        </Routes>
       </div>
       <Footer />
     </div>
