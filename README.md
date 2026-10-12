@@ -14,7 +14,7 @@
 
 ### 🎥 Demostración en Video del Proyecto (Hito 5)
 
-<video src="./src/assets/img-react-route-i/demo-hito-5-final.mov" controls width="100%"></video>
+[![Ver Demostración del Hito 5](https://img.youtube.com/vi/xjQ9au-j1Ek/hqdefault.jpg)](https://youtu.be/xjQ9au-j1Ek)
 
 ## 📸 Previsualización de Vistas
 
