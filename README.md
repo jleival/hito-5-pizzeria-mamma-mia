@@ -14,7 +14,13 @@
 
 ### 🎥 Demostración en Video del Proyecto (Hito 5)
 
-[![Ver Demostración del Hito 5](https://img.youtube.com/vi/xjQ9au-j1Ek/hqdefault.jpg)](https://youtu.be/xjQ9au-j1Ek)
+<div align="center">
+  <a href="https://youtu.be/xjQ9au-j1Ek" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/xjQ9au-j1Ek/hqdefault.jpg" alt="Ver Demostración del Hito 5" width="100%">
+  </a>
+</div>
+
+---
 
 ## 📸 Previsualización de Vistas
 
